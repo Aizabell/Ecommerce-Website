@@ -1,0 +1,158 @@
+.slider{
+	margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.product{
+	width: 400px;
+	height: 500px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 25px;
+	background-color: #FFFFFF;
+}
+
+.product2{
+	width: 300px;
+	height: 500px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 10px;
+	background-color: #FFFFFF;
+}
+
+.feature-sect{
+	background-color: white;
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: none;
+	padding: 10px 20px;
+	box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* .feature-box{
+    width: 85%;
+    height: auto;
+    background-color: rgb(182, 182, 182);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.prodimg{
+	height: 400px;
+	position: relative;
+}
+.prodimg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.prodimg2{
+	height: 400px;
+	position: relative;
+}
+.prodimg2 img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.catebox{
+	
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+.catetail{
+	display: flex;
+	flex-direction: column;
+}
+.catetail a{
+	text-decoration: none;
+	margin:  5px 0px;
+	
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;	
+}
+.catetail span{
+	color: #000000;
+	
+	border: 1px solid white;
+	text-align: center;
+	border-radius: 250px;
+}
+
+.price{
+	color: #000000;
+	font-weight: 600;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.overlayduct{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.seemore-btn{
+	width: 160px;
+	height: 40px;
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-weight: 700;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.4);
+}
+
+.seemore-btn:hover{
+	background-color: #1B1B1B;
+	color: #E1E1E1;
+	transition: all ease 0.3s;
+}
+.overlayduct{
+	visibility: hidden;
+}
+.prodimg:hover .overlayduct{
+	visibility: visible;
+	animation:fadecat 0.5s;
+}
+.prodimg2:hover .overlayduct{
+	visibility: visible;
+	animation:fadecat 0.5s;
+}
+
+@keyframes fadecat{
+	0%{opacity: 0;}
+	100%{opacity: 1}
+}
