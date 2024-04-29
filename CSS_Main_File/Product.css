@@ -1,0 +1,144 @@
+.product-box{
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: none;
+	padding: 10px 20px;
+	box-sizing: border-box;
+    overflow: hidden;
+}
+
+.productwrap{
+    width: 85%;
+    height: auto;
+    background-color: rgb(182, 182, 182);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productpage {
+	width: 100%;
+	height: auto;
+}
+
+.productback{
+	background: url(../Image/HomeAbstract.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+	background-attachment: fixed
+}
+
+.condition-box{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.search-container {
+	margin-bottom: 20px;
+	padding: 5px;
+	overflow: hidden;
+	width: 30%;
+}
+.search-container input[type=text] {
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+}
+.search-container button {
+	width: 25%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: right;
+	background-color: #b08400;
+	color: white;
+	cursor: pointer;
+}
+.price-range-container {
+	margin-bottom: 20px;
+	padding: 5px;
+	overflow: hidden;
+	width: 40%;
+}
+.price-range-container input[type=number] {
+	width: 36%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: left;
+}
+.price-range-container button {
+	width: 20%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	float: right;
+	background-color: #b08400;
+	color: white;
+	cursor: pointer;
+}
+
+/* Stylized design for category dropdown form */
+.category-container {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.category-container label {
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+}
+
+.category-container select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23333333"><path d="M10 12l-5-5 1.5-1.5L10 9.8l3.5-3.5L15 7z"/></svg>'); */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+/* .category-container select:hover {
+    border-color: #999;
+}
+
+.category-container select:focus {
+    border-color: #666;
+} */
+
+.category-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b08400;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-container button:hover {
+    background-color: #b08400;
+}
+

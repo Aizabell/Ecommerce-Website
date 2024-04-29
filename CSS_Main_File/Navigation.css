@@ -1,0 +1,363 @@
+.logo {
+	width: 160px;
+	height: 60px;
+	margin-left: 50px;
+
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.icon {
+
+	width: 100px;
+	height: 50px;
+	display: flex;
+}
+
+.icon img {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+	justify-content: space-between;
+
+}
+
+.navbar ul {
+	display: flex;
+	/* list-style-type: none; */
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.cart-num {
+	background: orange;
+	border-radius: 50%;
+	color: #000000;
+	padding: 5px 10px;
+	width: 15px;
+	height: 15px;
+
+}
+
+.navbar ul li {
+	/* margin: 0 10px;
+	padding: 0px; */
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.navbar ul li:hover {
+	background-color: #1B1B1B;
+}
+
+
+.navbar ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+	color: #E1E1E1;
+}
+
+.navbar ul li div button {
+	background-color: transparent;
+	border: none;
+	width: 80px;
+	height: 40px;
+	padding: 10px 15px;
+	margin-left: 20px;
+	background-color: #F3F3F3;
+	width: 10%;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.navbar ul li div button:hover {
+	background-color: #e50d0d;
+	color: #913d3d;
+}
+
+/* .sign {
+	width: 100px;
+	height: auto;
+	background-color: transparent;
+	color: white;
+} */
+
+
+.bs-btn {
+
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .475rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	background-color: #000000;
+	color: white;
+	text-decoration: none;
+}
+
+.bs-btn:hover {
+	color: #E1E1E1;
+	background-color: #1B1B1B;
+
+}
+
+.mininav:hover .overlayduct {
+	visibility: visible;
+	animation: fadecat 0.5s;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu li {
+	padding: 10px;
+}
+
+.dropdown-menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.dropdown-menu {
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+	visibility: visible;
+	display: block;
+}
+
+.dropdown-menu li {
+	display: block;
+}
+
+.dropdown-menu a {
+	padding: 0px;
+	color: white;
+	text-decoration: none;
+}
+
+/* pop up settings */
+
+#overlay {
+	display: none;
+	/* Initially hide the overlay */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Darken the background */
+	z-index: 999;
+	/* Ensure it appears above other content */
+}
+
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Semi-transparent background */
+	z-index: 1000;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+	position: relative;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.popup-content.active {
+	display: block;
+}
+
+.close-popup {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #888;
+}
+
+.close-popup:hover {
+	color: #333;
+}
+
+.form-container {
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
+.form-container p {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.tab {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	transition: background-color 0.3s;
+}
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+.tab button.active {
+	background-color: #ddd;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.tabcontent.active {
+	display: block;
+}
+
+/* Dropdown menu */
+select.gselect {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	background-color: white;
+	/* Add a background color */
+	appearance: none;
+	/* Remove default styles */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	position: relative;
+	/* Position relative for arrow placement */
+}
+
+/* Dropdown arrow */
+select.gselect::after {
+	content: '\25BC';
+	/* Unicode character for down arrow */
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	/* Ensure the arrow doesn't interfere with clicking */
+}
+
+/* Hover state */
+select.gselect:hover {
+	border-color: #aaa;
+}
+
+/* Focus state */
+select.gselect:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Active state */
+select.gselect:active {
+	border-color: #007bff;
+	box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+
+.credential{
+	display: flex;
+	flex-direction: row;
+}
